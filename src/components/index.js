@@ -11,6 +11,8 @@ import Sidebar from "./AppLayout/Sidebar/Sidebar";
 import Container from './Container'
 import VideoCard from "./VideoCard";
 import AppLayout from "./AppLayout/AppLayout";
+import RegisterForm from './RegisterForm.jsx'
+import Auth from './micro/Auth.jsx'
+import LoginForm from './LoginForm.jsx'
 
-
-export {SearchBar,SideBarbtn,SubmitBtn,SecondaryBtn,Button,InputBox,Tabs,Logo,Header,Sidebar,Container,VideoCard,AppLayout};
+export {SearchBar,SideBarbtn,SubmitBtn,SecondaryBtn,Button,InputBox,Tabs,Logo,Header,Sidebar,Container,VideoCard,AppLayout , RegisterForm,Auth,LoginForm};

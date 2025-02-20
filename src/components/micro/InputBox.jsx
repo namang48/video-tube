@@ -2,8 +2,6 @@ import React from 'react'
 
 const InputBox = ({
     type='text',
-    name="",
-    id="",
     placeholder='Enter Text',
     className='',
     ...props

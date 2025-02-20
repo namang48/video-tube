@@ -2,12 +2,13 @@ import { StrictMode } from 'react'
 import {createRoot} from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider,Navigate} from 'react-router-dom'
 import store from './store/store.js'
-import { Provider } from 'react-redux'
-import {Homepage,About,Support,VideoPage} from "./Pages"
+import { Provider, useSelector } from 'react-redux'
+import {Homepage,About,Support,VideoPage,Register,ChannelPage, Login} from "./Pages"
 
-Provider
+
+
 
 const router=createBrowserRouter([
   {
@@ -18,14 +19,24 @@ const router=createBrowserRouter([
       {
         path :'',
         element : <Homepage />
-      }
+      },
+      {
+        path : ':channelId',
+        element : <ChannelPage />
+      },
+      {
+        path :'register',
+        element:<Register />
+      },
+      {
+        path :'login',
+        element: <Login />
+      },
     ]
   },
   {
-    
       path :'/video/:id',
       element : <VideoPage />
-    
   },
   {
     path :'/about',
@@ -34,7 +45,7 @@ const router=createBrowserRouter([
   {
     path :'/support',
     element:<Support />
-  },
+  }
 ])
 
 

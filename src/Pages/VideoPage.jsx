@@ -18,7 +18,7 @@ const VideoPage = () => {
   <>  
     <Header />
     <div className="flex">
-      <Sidebar className='max-w-16 overflow-hidden'/>
+      <Sidebar small={true}/>
       <Container className=''>
     
     <div className="p-2">

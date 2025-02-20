@@ -9,15 +9,16 @@ const BtnType1 = ({
     <div
     
     >
-        {icon &&
+        
+        <button
+        className={` flex justify-center px-3 py-2 font-medium text-black bg-[#ae7aff] rounded-md transition-all duration-150 ease-out active:bg-[#616265] active:text-white active:border-2 ${className}`}
+        >
+          {icon &&
         <div
-        className='pl-3 pt-2'
+        className='pr-3'
             >
             {icon}
         </div>}
-        <button
-        className={`px-3 py-2 font-medium text-black bg-[#ae7aff] rounded-md transition-all duration-150 ease-out active:bg-[#616265] active:text-white active:border-2 ${className}`}
-        >
             {text}
         </button>
     </div>
